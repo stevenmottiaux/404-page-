@@ -1,0 +1,80 @@
+/* styles.css */
+
+body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    display: flex;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh; /* Utiliser la hauteur de la fenêtre comme hauteur du conteneur */
+    margin: 0; /* Supprimer les marges par défaut */
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#message, #monster-container, #link {
+    text-align: center; 
+    margin-bottom: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 20px;
+}
+
+.home-link {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.home-link:hover {
+    background-color: #0056b3;
+}
+
+
+#monster {
+    position: relative;
+    width: 200px; /* Taille en pixels */
+    height: 200px; /* Taille en pixels */
+}
+
+#monster-text {
+display: none;
+   font-size: 50px;
+   font-style: bold;
+   font-style: italic;
+   font-family: "Silkscreen", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   position: absolute;
+   top: 1px;
+   left: auto;
+}
+
+#monster:hover {
+    transform: translateY(-10px) rotate(-5deg); 
+}
+
+#monster:hover + #monster-text {
+    display: block;
+}
+
+#attention {
+    width: 100px;
+    height: 100px;
+}
